@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background-color: #5946b0;
+    color: #0a0909;
+    
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 350px;
+}
+nav .ul{
+    margin-left: 40px;
+   display: flex;
+   align-items: center;
+   
+}
+nav .logo {
+    width: 100px;
+    height: auto;
+}
+nav li {
+    margin-right: 20px;
+}
+nav a {
+    color: #0e0d0d;
+    text-decoration: none;
+}
+nav ul li:hover {
+    text-decoration: underline;
+    color: #ff0;
+}
+nav .contact {
+   
+    gap: 50px;
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+.contact img {
+    width: 30px;
+    height: 30px;
+}
+.contact .btn{
+    background-color: #050506;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 10px 5px 5px grey;
+    font-size: 20px;
+}
+.head {
+    text-align: center;
+    
+   
+    padding: 300px;
+    background-image: url('image/img.png');
+    background-size: cover;
+}
+.head h1 {
+    font-size: 50px;
+    color: #040303;
+    margin-bottom: 20px;
+}
+.head p {
+    font-size: 34px;
+    color: #121010;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.btn1, .btn2 {
+    background-color: #703cd9;
+    color: #fff;
+    border: none;
+    padding:  20px;
+    cursor: pointer;
+    border-radius:20px 20px;
+    box-shadow: 10px 5px 5px grey;
+    font-size: 20px;
+    margin-top: 70px;
+    margin-right: 20px;
+    width: 150px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #703cd9;
+    color: #0b0a0a;
+}
+
+/* Responsive media query for small screens */
+@media (max-width: 768px) {
+
+    /* Navbar vertically stacked */
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    nav .ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-left: 0;
+    }
+
+    nav .contact {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .contact .btn {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    /* Hero section center align */
+    .head {
+        padding: 120px 20px;
+        background-position: center;
+    }
+
+    .head h1 {
+        font-size: 32px;
+    }
+
+    .head p {
+        font-size: 18px;
+    }
+
+    .btn1, .btn2 {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        margin-top: 20px;
+        box-shadow: none;
+    }
+
+    /* Footer adjustments */
+    footer {
+        font-size: 14px;
+        background-color: #5946b0;
+        padding: 12px 0;
+    }
+}
